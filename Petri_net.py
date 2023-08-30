@@ -47,6 +47,20 @@ class PetriNet():
                 for f in flow:
                     if t[1]== f[1]:
                        possiple.append[f]
+        h = []
+        for p in self.places:
+            if possiple.contains(p):
+                h.append(p)
+
+        to_fire = True
+        for hh in h:
+            to_fire or bool(hh[1])
+
+        
+
+
+                
+                    
 
 # etc
 p = PetriNet()
