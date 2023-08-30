@@ -4,23 +4,32 @@ class PetriNet():
         self.places = []
         self.transitions = []
         self.flow = []
+        self.token = []
     def add_place(self, name):
-        self.places.append(name)
+        self.places.append((name,0))
+        
 
     def add_transition(self, name, id):
         self.transitions.append((name,id))
 
     def add_edge(self, source, target):
-        # code here
+        self.flow.append[(source,target)]
 
     def get_tokens(self, place):
-        # code here
+        for place in self.places:
+            if place[0] == 1:
+                print(place[1])
 
     def is_enabled(self, transition):
-        # code here
+        for t in self.transition:
+            if t[1] == transition:
+                for place in places:
+                    if pl
 
     def add_marking(self, place):
-        # code here
+        for place in self.places:
+            if place[0] == 1:
+                place += 1
 
     def fire_transition(self, transition):
         # code here
