@@ -21,18 +21,32 @@ class PetriNet():
                 print(place[1])
 
     def is_enabled(self, transition):
+        possiple = []
         for t in self.transition:
             if t[1] == transition:
-                for place in places:
-                    if pl
+                for f in flow:
+                    if t[1]== f[1]:
+                       possiple.append[f]
+        ans = False
+        for p in possiple:
+            if bool(p[1]):
+                ans = True
+        print(ans)
 
+
+    
     def add_marking(self, place):
         for place in self.places:
             if place[0] == 1:
                 place += 1
 
     def fire_transition(self, transition):
-        # code here
+        possiple = []
+        for t in self.transition:
+            if t[1] == transition:
+                for f in flow:
+                    if t[1]== f[1]:
+                       possiple.append[f]
 
 # etc
 p = PetriNet()
