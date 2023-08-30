@@ -1,13 +1,14 @@
 class PetriNet():
 
     def __init__(self):
-        # code here
-
+        self.places = []
+        self.transitions = []
+        self.flow = []
     def add_place(self, name):
-        # code here
+        self.places.append(name)
 
     def add_transition(self, name, id):
-        # code here
+        self.transitions.append((name,id))
 
     def add_edge(self, source, target):
         # code here
